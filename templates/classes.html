@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-</body>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+    
+        <!-- Ionic icons -->
+        <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+        <title>Le Pointe School of Dance</title>
+      </head>
+    
+  <body>
+    
+    <!-- N A V B A R -->
+  <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon ion-md-menu"></span>
+    </button>
+    <img src="/flask-site/dance.jpg" width="64" height="64" class="img-fluid nav-logo-mobile" alt="Company Logo">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="container">
+      	<img src="/flask-site/dance.jpg" class="img-fluid nav-logo-desktop" alt="Company Logo">
+        <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="#">Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          </li>
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="{{ url_for('home') }}">Instructors <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table class="class-pricing">
+        <tr>
+          <th>Class</th>
+          <th>Days</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Jazz</td>
+          <td>Mon, Wed, Fri</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Tap</td>
+          <td>Tue, Thur, Fri</td>
+          <td>$20</td>
+        </tr>
+      </table>
+      
+  </body>
 </html>

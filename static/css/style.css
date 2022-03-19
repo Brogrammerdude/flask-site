@@ -262,14 +262,17 @@ section {
   margin-bottom: 0px;
 }
 
-table {
-  width: 300px;
-  border: 1px solid black;
+/* Table styles */
+
+table, tr {
+  width: 600px;
+  margin: 15px;
+  padding: 10px;
 }
 
 th {
-  height: 120px;
-  text-align: left;
+  height: 100px;
+  text-align: center;
 }
 
 th,
@@ -279,7 +282,7 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-table,
+
 th,
 td {
   border: 1px solid;

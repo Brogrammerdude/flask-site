@@ -33,14 +33,14 @@
       	<img src="/dance.jpg" class="img-fluid nav-logo-desktop" alt="Company Logo">
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('index')}}>Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/classes.html">Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('classes')}}>Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/instructors.html">Instructors <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('instructors')}}>Instructors <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
         </ul>
       </div>

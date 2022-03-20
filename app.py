@@ -3,9 +3,9 @@ from flask import Flask, redirect, url_for, render_template
 app = Flask(__name__)
 
 # Defining the home page of our site
-@app.route("/index")  
+@app.route("/")  
 def index():
-	return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/classes")

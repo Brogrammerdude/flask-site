@@ -33,21 +33,19 @@
       	<img src="/dance.jpg" class="img-fluid nav-logo-desktop" alt="Company Logo">
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('index')}}>Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/classes.html">Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('classes')}}>Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/instructors.html">Instructors</a> <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('instructors')}}>Instructors</a> <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -86,11 +84,22 @@
         </tr>
           <tr>
             <td>Belly Dancing</td>
-            <td>Mon, Wed, Fri</td>
-            <td>6PM-7PM</td>
+            <td>Mon</td>
+            <td>7PM-8PM</td>
             <td>$20</td>
         </tr>
       </table>
-      
+      <br>
+      <h3>Application</h3>
+      <form action="" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" size="50"><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address" size="50"><br>
+  <label for="phone">Phone Number:</label><br>
+  <input type="text" id="phone" name="phone" size="50"><br>
+</form>
   </body>
 </html>

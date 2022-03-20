@@ -34,25 +34,61 @@
       	<img src="../dance.jpg" class="img-fluid nav-logo-desktop" alt="Company Logo">
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('index')}}>Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/classes.html">Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('classes')}}>Classes <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="../templates/instructors.html">Instructors <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href={{url_for('instructors')}}>Instructors <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- INSTRUCTORS -->
-    <section>
-        <div class="instructors">
-            <img src="../flask-site/dance.jpg" alt="dance" />
-            <p>Miss Dar</p>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="../miss_dar.jpeg" alt="Miss Dar" style="width:98px;">
+        <div class="container">
+          <h2>Miss Dar</h2>
+          <p class="title">Dance Instructor</p>
+          <p>Miss Dar is the head instructor at LePointe School of Dance
+            <br> and has been teaching dance for over 15 years. She specializes
+            <br>in Jazz, Tap, Irish Folk, and Classic.
+          </p>
+          <p>example@example.com</p>
+          <p><button class="button">Email Me!</button></p>
         </div>
-    </section>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="../mom_instructor.jpg" alt="Tammy" style="width: 98px;">
+        <div class="container">
+          <h2>Tammy Dodson</h2>
+          <p class="title">Belly Dance Instructor</p>
+          <p>Tammy has taught belly dance in Potsdam, 
+            <br>Massena, Hogansburg, & Ennis, TX. She 
+            <br>has been troupe leader of Veils of The
+            <br>Nile since 2015.
+          </p>
+          <p>gwdmusic@hotmail.com</p>
+          <p><button class="button">Email Me!</button></p>
+        </div>
+      </div>
+    </div>
+  
+  
     
 </body>
 </html>
